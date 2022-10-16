@@ -12,11 +12,11 @@ namespace CustomStackExtendedOPClass
 {
     public class CustomStackExtendedOP
     {
-        public static void DisplayAllInternsNameAndId(CustomStack<Jedi> stack) 
+        public static void DisplayAllInternsNameAndId(ICustomStack<IIntern> stack) 
         {
             while (stack.Count() > 0)
             {
-                Console.WriteLine(stack.Pop().NameId);
+                Console.WriteLine(stack.Pop().GetNameId());
             }
         }
     }

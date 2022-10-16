@@ -3,24 +3,32 @@ using IInternInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CustomStack
 {
-    public class CustomStack<T>//:ICustomStack<T> where T : IIntern
+    public class CustomStack<T> :ICustomStack<IIntern> 
     {
-        public static T[] array = new T[10];
+        public IIntern[] array;
 
-        public static int index = 0;
+        public int index ;
 
-        public void Push(T a)
+
+        public CustomStack()
+        {
+            array = new IIntern[10];
+            index = 0;
+        }
+
+        public void Push(IIntern a)
         {
             index++;
             array[index] = a;
 
         }
-        public T Pop()
+        public IIntern Pop()
         {
             index--;
             var a = array[index + 1];

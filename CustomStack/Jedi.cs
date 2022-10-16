@@ -2,23 +2,29 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace SkillsLabClass
+namespace JediClass
 {
-    public class SkillsLab:IIntern
+    public class Jedi:IIntern
     {
         private string name;
         private int id;
         public string NameId => $"Jedi - {name}:{id}";
 
-
-        public SkillsLab(string name, int id)
+        public Jedi(string _name, int _id)
         {
-            name = name;
-            id = id;
-           
+            name = _name;
+            id = _id;
+
+        }
+
+        public string GetNameId()
+        {
+            return NameId;
         }
 
 

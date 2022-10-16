@@ -50,21 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomStackExtendedOP\CustomStackExtendedOP.csproj">
-      <Project>{f8955230-2f1a-4762-9173-50d5ac7abb7b}</Project>
-      <Name>CustomStackExtendedOP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CustomStack\CustomStack.csproj">
       <Project>{54b4aff7-5531-4482-a018-11f1a2735047}</Project>
       <Name>CustomStack</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IIntern\IIntern.csproj">
-      <Project>{B2DD6D71-18AF-4D30-96E4-25B20D773ACC}</Project>
-      <Name>IIntern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Jedi\Jedi.csproj">
-      <Project>{405cda54-3c6f-4834-be56-2a9fc4656483}</Project>
-      <Name>Jedi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -41,18 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CustomStack.cs" />
+    <Compile Include="CustomStackExtendedOP.cs" />
+    <Compile Include="ICustomStack.cs" />
+    <Compile Include="IIntern.cs" />
+    <Compile Include="Jedi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ICustomStack\ICustomStack.csproj">
-      <Project>{d971a341-d3a9-4558-b215-4a098f8415ee}</Project>
-      <Name>ICustomStack</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IIntern\IIntern.csproj">
-      <Project>{b2dd6d71-18af-4d30-96e4-25b20d773acc}</Project>
-      <Name>IIntern</Name>
-    </ProjectReference>
+    <Compile Include="SkillsLab.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

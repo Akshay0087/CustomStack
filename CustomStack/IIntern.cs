@@ -8,7 +8,7 @@ namespace IInternInterface
 {
     public interface IIntern
     {
-        string NameId { get; }
+        string GetNameId();
 
     }
 }
